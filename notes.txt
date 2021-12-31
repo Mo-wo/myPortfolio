@@ -1,0 +1,14 @@
+To connect to tailwind Library and specify output filepath:
+npx tailwindcss -o ./public/styles.css
+
+To specify input file:
+npx tailwindcss -i ./src-styles/styles.css -o ./public/styles.css
+
+To create tailwind config file with all styles:
+npx tailwindcss init --full
+
+To create a blank tailwind config file:
+npx tailwindcss init
+
+To automatically rebuild tailwind file:
+npx tailwindcss -i ./src-styles/styles.css -o ./public/styles.css --watch

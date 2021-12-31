@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply box-border w-full h-auto overflow-x-hidden md:text-xl;
+}
+.welcome{
+    @apply bg-[url('../images/bg-6.jpg')] bg-top bg-no-repeat bg-cover; 
+}
+.opacity{
+    @apply bg-zinc-900/60;
+}
+nav{
+    @apply px-4 xsm:hidden lg:grid grid-cols-3 ;
+}
+ul{
+    @apply mr-4 p-4 col-start-3 col-end-4 text-right flex place-content-end justify-evenly font-cinzel;
+}
+li{
+    @apply m-2 text-slate-300;
+}
+.about{
+    @apply mx-8 py-8 h-3/5  flex flex-col justify-evenly md:mx-20 md:py-20 md:h-screen lg:py-2 lg:grid grid-cols-1 grid-rows-3 items-end;
+}
+.h1{
+    @apply font-cinzel_2 text-3xl text-white font-medium drop-shadow-2xl md:text-6xl md:-mb-10 lg:-mb-2 lg:self-center lg:text-8xl;
+}
+p{
+   @apply pt-4 text-sm text-left text-slate-400 md:pt-0 md:pr-10 2md:w-4/5 lg:self-start lg:text-lg;
+}
+.about-links-wrapper{
+    @apply mt-4 flex flex-col md:flex-row md:self-start md:mt-0;
+}
+.about-links{
+    @apply mb-2 pt-0 w-36 md:w-32 md:mr-2 border-2 rounded-2xl font-medium text-center text-slate-400 font-sans text-sm hover:bg-white hover:text-black hover:border-zinc-900 transition duration-700 ease-in-out lg:w-40 h-8 pt-1;
+}
+#projects{
+    @apply bg-gray-100/40;
+}
+h2{
+    @apply font-cinzel font-semibold text-center py-4;
+}
+.card-wrapper{
+    @apply px-8 grid gap-8 md:grid-cols-2 2md:grid-cols-2 md:p-10 ;
+}
+.project-card{
+    @apply mb-4 bg-white rounded overflow-hidden drop-shadow-lg; 
+}
+.project-img{
+    @apply w-full
+}
+span{
+    @apply my-0 mx-auto ml-2 font-sans text-center text-sm text-left text-slate-500;
+}
+#skills{
+    @apply bg-gray-500/10 2sm:h-fit 2sm:p-4;
+}
+.skills-container{
+    @apply px-8 p-4 grid grid-cols-2 gap-4 text-center items-center justify-items-center md:grid-cols-4;
+}
+.skills-wrapper{
+    @apply relative drop-shadow-2xl;
+}
+.skills-img{
+    @apply w-20 h-20;
+}
+.logo-desc{
+    @apply px-2 py-0 m-0 rounded bg-slate-900/80 text-white;
+}
+#contact{
+    @apply mt-4
+}
+form{
+    @apply w-full mb-2 px-8 text-sm flex flex-col justify-center  3sm:px-16 md:my-0 md:mx-auto md:px-20 md:w-10/12 4md:w-9/12 xl:w-8/12 2xl:w-7/12 3xl:w-6/12;  
+}
+input{
+    @apply mb-2 p-2 border-2 rounded-2xl;
+}
+textarea{
+    @apply mb-2 p-4 border-2 rounded-2xl;
+}
+button{
+    @apply mt-2 py-1 self-center border-none bg-gray-500 text-white w-2/4 h-8 border-2 rounded-2xl font-medium text-center font-sans text-sm hover:bg-gray-700 transition duration-700 ease-in-out 2sm:mb-4 2sm:w-1/3 2md:w-1/3 3md:w-1/4 3xl:w-1/5; 
+}
+footer{
+    @apply p-4 bg-gray-200 flex flex-col;
+}
+h3{
+    @apply font-cinzel self-center;
+}
+.socials-wrapper{
+    @apply mt-4 flex justify-evenly ;
+}
+.socials-img{
+    @apply w-5 h-5 m-1;
+}
+.legal{
+    @apply text-center justify-self-center self-center p-0 mt-4;
+}
