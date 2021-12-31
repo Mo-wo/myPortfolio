@@ -458,6 +458,13 @@ body{
   }
 }
 
+@media (min-width: 900px){
+  body{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .welcome{
   background-image: url('../images/bg-6.jpg');
   background-size: cover;
@@ -485,6 +492,14 @@ nav{
   nav{
     display: grid;
   }
+
+  nav{
+    padding-top: 2rem;
+  }
+
+  nav{
+    padding-right: 2.5rem;
+  }
 }
 
 ul{
@@ -511,9 +526,7 @@ li{
   display: flex;
   height: 60%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-evenly;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -526,18 +539,28 @@ li{
   }
 
   .about{
-    height: 100vh;
+    height: 75%;
   }
 
   .about{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 900px){
+  .about{
+    height: 100vh;
   }
 }
 
 @media (min-width: 960px){
   .about{
     display: grid;
+  }
+
+  .about{
+    align-items: flex-end;
   }
 
   .about{
@@ -559,20 +582,12 @@ li{
 
 @media (min-width: 640px){
   .h1{
-    margin-bottom: -2.5rem;
-  }
-
-  .h1{
     font-size: 3.75rem;
     line-height: 1;
   }
 }
 
 @media (min-width: 960px){
-  .h1{
-    margin-bottom: -0.5rem;
-  }
-
   .h1{
     align-self: center;
   }
@@ -592,7 +607,25 @@ p{
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+@media (min-width: 200px){
+  p{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 550px){
+  p{
+    padding-right: 2rem;
+  }
+}
+
 @media (min-width: 640px){
+  p{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   p{
     padding-top: 0px;
   }
@@ -600,11 +633,30 @@ p{
   p{
     padding-right: 2.5rem;
   }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 768px){
   p{
     width: 80%;
+  }
+}
+
+@media (min-width: 800px){
+  p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 900px){
+  p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -641,11 +693,10 @@ p{
 
 .about-links{
   margin-bottom: 0.5rem;
-  height: 2rem;
   width: 9rem;
   border-radius: 1rem;
   border-width: 2px;
-  padding-top: 0.25rem;
+  padding-top: 0px;
   text-align: center;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
@@ -679,9 +730,18 @@ p{
   }
 }
 
-@media (min-width: 960px){
+@media (min-width: 900px){
+  .about-links{
+    height: 2rem;
+  }
+
   .about-links{
     width: 10rem;
+  }
+
+  .about-links{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -787,9 +847,24 @@ span{
   filter: var(--tw-filter);
 }
 
-.skills-img{
-  height: 5rem;
-  width: 5rem;
+@media (min-width: 200px){
+  .skills-img{
+    height: 3rem;
+  }
+
+  .skills-img{
+    width: 3rem;
+  }
+}
+
+@media (min-width: 450px){
+  .skills-img{
+    height: 5rem;
+  }
+
+  .skills-img{
+    width: 5rem;
+  }
 }
 
 .logo-desc{
